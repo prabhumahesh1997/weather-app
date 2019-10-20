@@ -1,4 +1,4 @@
-console.log("client side javascript file")
+
 
 
 
@@ -19,7 +19,6 @@ weatherForm.addEventListener('submit',function(e){
         if(data.error)
         {
              msg1.textContent=data.error
-             msg1.style.color="red";
         }
         else 
         {
