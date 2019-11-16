@@ -7,6 +7,7 @@ var hbs=require('hbs')
 var geocode=require('./utils/geocode')
 var forecast=require('./utils/forecast')
 
+var port=process.env.PORT || 3000
 //SETTING PAHTS TO CONFIC EXPRESS
 //console.log(__dirname) // return current dir path
 //console.log(__filename) // return current file path 
@@ -128,7 +129,7 @@ app.get('*',function(req,res){
 // })
 
 
-app.listen(3000,function(){
+app.listen(port,function(){
     console.log("Server port is on")
 })
 
